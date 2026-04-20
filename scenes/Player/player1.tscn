@@ -1,3 +1,159 @@
 [gd_scene format=3 uid="uid://blti41dj41kdy"]
 
-[node name="Player1" type="Node2D" unique_id=1503967817]
+[ext_resource type="Texture2D" uid="uid://c51gto8j8vvoo" path="res://assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_5hel0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5wkb"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(0, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlm8v"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(192, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5qmr"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(384, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xe6yu"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(576, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mee8"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(768, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_il5di"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(960, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgind"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kahhy"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6nks"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_516sm"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_740qn"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylc4f"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_821i5"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjah2"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ism6b"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(384, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f55kk"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(576, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhccg"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(768, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vupqp"]
+atlas = ExtResource("1_5hel0")
+region = Rect2(960, 192, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qffw6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5wkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlm8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5qmr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xe6yu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mee8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_il5di")
+}],
+"loop": true,
+"name": &"fight",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgind")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kahhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6nks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_516sm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_740qn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylc4f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_821i5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjah2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ism6b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f55kk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhccg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vupqp")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[node name="Player1" type="CharacterBody2D" unique_id=1182933655]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1461866871]
+position = Vector2(-3, 0)
+sprite_frames = SubResource("SpriteFrames_qffw6")
+animation = &"fight"
+autoplay = "idle"
+frame = 3
+frame_progress = 0.042075284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=423546812]
