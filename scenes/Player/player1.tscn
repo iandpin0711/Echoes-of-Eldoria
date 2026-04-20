@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://blti41dj41kdy"]
 
 [ext_resource type="Texture2D" uid="uid://c51gto8j8vvoo" path="res://assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_5hel0"]
+[ext_resource type="Script" uid="uid://da3o7j4sachp1" path="res://scripts/characters/players.gd" id="1_g5wkb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5wkb"]
 atlas = ExtResource("1_5hel0")
@@ -147,6 +148,7 @@ animations = [{
 }]
 
 [node name="Player1" type="CharacterBody2D" unique_id=1182933655]
+script = ExtResource("1_g5wkb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1461866871]
 position = Vector2(-3, 0)

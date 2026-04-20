@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://okt4h0xyo0m5"]
 
+[ext_resource type="Script" uid="uid://da3o7j4sachp1" path="res://scripts/characters/players.gd" id="1_1d58m"]
 [ext_resource type="Texture2D" uid="uid://c4pm57u8kltb5" path="res://assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Blue/Archer_Blue.png" id="1_1fi4u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1d58m"]
@@ -160,7 +161,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="CharacterBody2D" unique_id=830159326]
+[node name="Player2" type="CharacterBody2D" unique_id=830159326]
+script = ExtResource("1_1d58m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1567355257]
 
