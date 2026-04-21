@@ -24,7 +24,6 @@ Echoes of Eldoria is a 2D action-adventure game set in a large open world. The p
 | A           | Move Left       |
 | S           | Move Down       |
 | D           | Move Right      |
-| Shift       | Run             |
 | Left Click  | Attack          |
 | E           | Interact        |
 | Q           | Use Item        |
