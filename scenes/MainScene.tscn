@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://b20uxx6pw7igy" path="res://scenes/tileset/background.tres" id="1_echbf"]
 [ext_resource type="Texture2D" uid="uid://bcwk8y3fhyu3f" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Blue Buildings/Castle.png" id="2_ibiss"]
 [ext_resource type="Texture2D" uid="uid://c40v3hnayulqr" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Blue Buildings/House1.png" id="3_c6dvc"]
-[ext_resource type="PackedScene" uid="uid://blti41dj41kdy" path="res://scenes/Player/player1.tscn" id="4_611at"]
+[ext_resource type="PackedScene" uid="uid://blti41dj41kdy" path="res://scenes/Player/Player.tscn" id="4_611at"]
 
 [node name="MainScene" type="Node2D" unique_id=303742251]
 
