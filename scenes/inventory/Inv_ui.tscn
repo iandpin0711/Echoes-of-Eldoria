@@ -7,10 +7,6 @@ scale = Vector2(1.0006703, 0.9979261)
 transform = Transform2D(1.0006703, 0, 0, 0.9979261, 0, 0)
 script = ExtResource("1_eoe3s")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1732291678]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.4575639, 0.5462167)
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1215342088]
+offset_right = 40.0
+offset_bottom = 40.0
