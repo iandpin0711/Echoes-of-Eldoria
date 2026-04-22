@@ -1,6 +1,7 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://cd5dxd6sqwhmb"]
 
 [ext_resource type="Texture2D" uid="uid://d1adnur7ka57" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png" id="1_23gbg"]
+[ext_resource type="Texture2D" uid="uid://bh1tpv1m0v8ir" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack2.png" id="2_m8xtf"]
 [ext_resource type="Texture2D" uid="uid://4ykqrlrn1aof" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="4_y1ogv"]
 [ext_resource type="Texture2D" uid="uid://b5d3meeh7udxo" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png" id="5_lqqr2"]
 
@@ -18,6 +19,22 @@ region = Rect2(384, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xlnn0"]
 atlas = ExtResource("1_23gbg")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23gbg"]
+atlas = ExtResource("2_m8xtf")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0im55"]
+atlas = ExtResource("2_m8xtf")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktgnr"]
+atlas = ExtResource("2_m8xtf")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1ogv"]
+atlas = ExtResource("2_m8xtf")
 region = Rect2(576, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_stkiq"]
@@ -90,10 +107,22 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xlnn0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23gbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0im55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktgnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1ogv")
 }],
 "loop": false,
 "name": &"attack",
-"speed": 8.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,

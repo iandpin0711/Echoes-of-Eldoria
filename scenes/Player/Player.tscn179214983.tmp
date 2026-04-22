@@ -168,7 +168,4 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=423546812]
 shape = SubResource("CircleShape2D_g5wkb")
 
-[node name="AttackPoint" type="Marker2D" parent="." unique_id=1228042991]
-position = Vector2(44, -47)
-
 [node name="InvUI" parent="." unique_id=1022114235 instance=ExtResource("6_socpp")]
