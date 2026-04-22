@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export var inv: Inv
 
 var char_index = 0
 var is_busy = false
