@@ -2,24 +2,15 @@
 
 [ext_resource type="Script" uid="uid://bgktee4hotib2" path="res://scripts/Inv_ui.gd" id="1_eoe3s"]
 
-[node name="InvUI" type="Control" unique_id=1272627596]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -694.0
-offset_top = -412.0
-offset_right = -694.0
-offset_bottom = -412.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(2.2227786, 2.5564597)
+[node name="InvUI" type="CanvasLayer" unique_id=1022114235]
+scale = Vector2(1.0006703, 0.9979261)
+transform = Transform2D(1.0006703, 0, 0, 0.9979261, 0, 0)
 script = ExtResource("1_eoe3s")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1732291678]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.4575639, 0.5462167)
