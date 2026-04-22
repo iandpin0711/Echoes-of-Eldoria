@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d1adnur7ka57" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png" id="2_xcisb"]
 [ext_resource type="Texture2D" uid="uid://4ykqrlrn1aof" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="3_socpp"]
 [ext_resource type="Texture2D" uid="uid://b5d3meeh7udxo" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png" id="4_fxc31"]
+[ext_resource type="PackedScene" uid="uid://bjn2jurgo57yb" path="res://scenes/inventory/Inv_ui.tscn" id="6_socpp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4mee8"]
 atlas = ExtResource("2_xcisb")
@@ -166,3 +167,5 @@ autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=423546812]
 shape = SubResource("CircleShape2D_g5wkb")
+
+[node name="InvUI" parent="." unique_id=1022114235 instance=ExtResource("6_socpp")]
