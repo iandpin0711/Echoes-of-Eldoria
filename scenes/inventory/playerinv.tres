@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bb4ak1gagmtpc" path="res://scripts/Inventory_item.gd" id="1_jkcqy"]
 [ext_resource type="Script" uid="uid://puujnx70jygr" path="res://scripts/Inventory.gd" id="2_0n0tm"]
+[ext_resource type="Resource" uid="uid://b07uf0dmlo77t" path="res://scenes/inventory/prueba2.tres" id="2_4x272"]
 
 [resource]
 script = ExtResource("2_0n0tm")
-items = Array[ExtResource("1_jkcqy")]([null, null, null, null, null, null, null, null, null, null, null, null])
+items = Array[ExtResource("1_jkcqy")]([ExtResource("2_4x272"), ExtResource("2_4x272"), ExtResource("2_4x272"), null, null, null, null, null, null, null, null, null])
 metadata/_custom_type_script = "uid://puujnx70jygr"
