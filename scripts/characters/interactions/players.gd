@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var attack_point: Marker2D = $AttackPoint
+@onready var anim_player: AnimationPlayer = $AnimationPlayer
 
 @export var inv: Inv
 
@@ -33,9 +33,9 @@ func _physics_process(_delta):
 		else:
 			last_dir.x = abs(last_dir.x)
 		sprite.play("attack")
-		await sprite.animation_finished
 		if char_index == 2:
-			_shoot_arrow()
+			anim_player.play("shoot")
+		await sprite.animation_finished
 		is_busy = false
 
 	elif Input.is_action_just_pressed("interact"):
@@ -74,8 +74,13 @@ func load_character():
 
 func _shoot_arrow():
 	var arrow = ARROW.instantiate()
-	arrow.position = attack_point.global_position
-	var dir = last_dir.normalized()
-	dir.y -= 0.5
+	var offset = Vector2(20, -20)
+	if sprite.flip_h:
+		offset.x = -20
+	arrow.position = global_position + offset
+	var dir = Vector2.RIGHT
+	if sprite.flip_h:
+		dir = Vector2.LEFT
+	dir.y -= 0.3
 	arrow.direction = dir
 	get_parent().add_child(arrow)

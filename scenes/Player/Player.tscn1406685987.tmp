@@ -156,7 +156,7 @@ radius = 36.40055
 
 [sub_resource type="Animation" id="Animation_socpp"]
 resource_name = "shoot"
-length = 0.9
+length = 1.1
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -164,7 +164,7 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.8),
+"times": PackedFloat32Array(0.0333333),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],

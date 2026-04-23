@@ -4,7 +4,7 @@ var direction = Vector2.RIGHT
 var vel = Vector2.ZERO
 var initialized = false
 var timer = 0.0
-const SPEED = 400.0
+const SPEED = 200.0
 const GRAVITY = 150.0
 
 
