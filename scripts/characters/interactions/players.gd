@@ -20,7 +20,7 @@ const ARROW = preload("res://scenes/archer.tscn")
 
 func _ready():
 	load_character()
-
+	add_to_group("Player")
 
 func _physics_process(_delta):
 	if is_busy:
@@ -84,3 +84,6 @@ func _shoot_arrow():
 	dir.y -= 0.3
 	arrow.direction = dir
 	get_parent().add_child(arrow)
+
+func collect(item):
+	inv.insert(item)

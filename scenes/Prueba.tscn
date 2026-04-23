@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bkv3dyoo25dy4"]
+
+[ext_resource type="Script" uid="uid://bkat26add66iu" path="res://scripts/Collectible.gd" id="1_iyvkr"]
+[ext_resource type="Resource" uid="uid://dy7r1l6xp4a7a" path="res://scenes/inventory/Prueba.tres" id="2_4kivy"]
+[ext_resource type="Texture2D" uid="uid://bpw31f285c5u2" path="res://assets/Tiny Swords/Tiny Swords (Update 010)/Deco/06.png" id="2_f48f8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4kivy"]
+radius = 27.294687
+
+[node name="Prueba" type="Area2D" unique_id=942079572]
+collision_layer = 2
+script = ExtResource("1_iyvkr")
+item = ExtResource("2_4kivy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=94593244]
+texture_filter = 1
+scale = Vector2(1.4661177, 1.4661177)
+texture = ExtResource("2_f48f8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1064556204]
+position = Vector2(3, 1)
+shape = SubResource("CircleShape2D_4kivy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
