@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://blti41dj41kdy"]
 
-[ext_resource type="Script" uid="uid://b4d37f2kercne" path="res://scripts/characters/interactions/players.gd" id="1_ved6o"]
-[ext_resource type="Resource" uid="uid://drttwsm83lv25" path="res://scenes/inventory/playerinv.tres" id="2_socpp"]
 [ext_resource type="Texture2D" uid="uid://d1adnur7ka57" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png" id="2_xcisb"]
 [ext_resource type="Texture2D" uid="uid://4ykqrlrn1aof" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="3_socpp"]
 [ext_resource type="Texture2D" uid="uid://b5d3meeh7udxo" path="res://assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png" id="4_fxc31"]
@@ -155,8 +153,6 @@ animations = [{
 radius = 36.40055
 
 [node name="Player1" type="CharacterBody2D" unique_id=1182933655]
-script = ExtResource("1_ved6o")
-inv = ExtResource("2_socpp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1461866871]
 texture_filter = 1
@@ -171,4 +167,8 @@ shape = SubResource("CircleShape2D_g5wkb")
 [node name="AttackPoint" type="Marker2D" parent="." unique_id=1228042991]
 position = Vector2(44, -47)
 
-[node name="InvUI" parent="." unique_id=1022114235 instance=ExtResource("6_socpp")]
+[node name="InvUI" parent="." unique_id=28797702 instance=ExtResource("6_socpp")]
+offset_left = -140.0
+offset_top = -249.00003
+offset_right = -140.0
+offset_bottom = -249.00003

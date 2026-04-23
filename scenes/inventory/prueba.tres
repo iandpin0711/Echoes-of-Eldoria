@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://dy7r1l6xp4a7a"]
+
+[ext_resource type="Script" uid="uid://bb4ak1gagmtpc" path="res://scripts/Inventory_item.gd" id="1_lmblb"]
+[ext_resource type="Texture2D" uid="uid://bredspjm8780j" path="res://assets/Tiny Swords/Tiny Swords (Update 010)/Deco/03.png" id="2_68mja"]
+
+[resource]
+script = ExtResource("1_lmblb")
+name = "Prueba"
+texture = ExtResource("2_68mja")
+metadata/_custom_type_script = "uid://bb4ak1gagmtpc"
