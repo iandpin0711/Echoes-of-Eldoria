@@ -178,6 +178,7 @@ _data = {
 }
 
 [node name="Player1" type="CharacterBody2D" unique_id=1182933655]
+scale = Vector2(0.5918693, 0.5918693)
 script = ExtResource("1_ved6o")
 inv = ExtResource("2_socpp")
 
