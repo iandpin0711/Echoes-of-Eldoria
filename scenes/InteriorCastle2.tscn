@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://do62r3s2av4r6"]
+
+[ext_resource type="TileSet" uid="uid://dmyv5cynukd1g" path="res://scenes/tileset/InteriorCastle.tres" id="1_ppb7b"]
+
+[node name="InteriorCastle2" type="Node2D" unique_id=138569833]
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=941321540]
+tile_set = ExtResource("1_ppb7b")
+
+[node name="Items" type="TileMapLayer" parent="." unique_id=199647341]
+tile_set = ExtResource("1_ppb7b")
