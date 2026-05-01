@@ -1,14 +1,31 @@
 [gd_scene format=3 uid="uid://rtmafvk2tklo"]
 
-[ext_resource type="Script" uid="uid://6eeo36tnomh3" path="res://scripts/Inv_ui_slot.gd" id="1_i5cy3"]
 [ext_resource type="Texture2D" uid="uid://bltim8wa62oon" path="res://assets/inventory/inventory-slot.png" id="1_sr5mn"]
+
+[sub_resource type="GDScript" id="GDScript_sr5mn"]
+script/source = "extends Panel
+
+@onready var item_visual: TextureRect = $CenterContainer/Panel/item_display
+@onready var amount_text: Label = $CenterContainer/Panel/Label
+
+func update(slot: InvSlot):
+	if !slot.item:
+		item_visual.visible = false
+		amount_text.visible = false
+	else:
+		item_visual.visible = true
+		item_visual.texture = slot.item.texture
+		if slot.amount > 1:
+			amount_text.visible = true
+		amount_text.text = str(slot.amount)
+"
 
 [node name="inv_UI_slot" type="Panel" unique_id=321481074]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(16, 16)
 offset_right = 16.0
 offset_bottom = 16.0
-script = ExtResource("1_i5cy3")
+script = SubResource("GDScript_sr5mn")
 
 [node name="Sprite2D" type="TextureRect" parent="." unique_id=509761407]
 texture_filter = 1

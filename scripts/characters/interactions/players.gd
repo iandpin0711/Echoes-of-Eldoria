@@ -91,4 +91,4 @@ func collect(item):
 
 func _input(event):
 	if event.is_action_pressed("enter") and in_zone:
-		get_tree().change_scene_to_file("res://scenes/InteriorCastle.tscn")
+		get_tree().change_scene_to_file("res://scenes/Map/InteriorCastle.tscn")

@@ -184,7 +184,8 @@ inv = ExtResource("2_socpp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1461866871]
 texture_filter = 1
-position = Vector2(-3, 0)
+position = Vector2(1.6895618, -5.722046e-06)
+scale = Vector2(0.8148183, 0.7991933)
 sprite_frames = SubResource("SpriteFrames_qffw6")
 animation = &"walk"
 autoplay = "idle"
