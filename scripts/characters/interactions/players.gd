@@ -7,6 +7,7 @@ extends CharacterBody2D
 
 var char_index = 0
 var is_busy = false
+var in_zone = false
 var last_dir = Vector2.RIGHT
 
 const SPEED = 200.0
@@ -87,3 +88,7 @@ func _shoot_arrow():
 
 func collect(item):
 	inv.insert(item)
+
+func _input(event):
+	if event.is_action_pressed("enter") and in_zone:
+		get_tree().change_scene_to_file("res://scenes/InteriorCastle.tscn")
