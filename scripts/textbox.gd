@@ -10,6 +10,7 @@ var writing : bool = false
 
 func _ready():
 	visible = false
+	add_to_group("textbox")
 
 func show_text (txt: String):
 	complete_text = txt

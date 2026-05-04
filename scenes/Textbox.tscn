@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bfgswhf4o7g0f"]
+
+[ext_resource type="Script" uid="uid://bry40dlpulddr" path="res://scripts/textbox.gd" id="1_hkkga"]
+[ext_resource type="Texture2D" uid="uid://16akpab8h52v" path="res://assets/UI Elements/txtbox.png" id="2_k631v"]
+
+[node name="Textbox" type="CanvasLayer" unique_id=1788663277]
+script = ExtResource("1_hkkga")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=219429542]
+custom_minimum_size = Vector2(300, 50)
+offset_left = 382.0
+offset_top = 181.0
+offset_right = 682.0
+offset_bottom = 292.0
+texture = ExtResource("2_k631v")
+
+[node name="Label" type="Label" parent="NinePatchRect" unique_id=1109718190]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 24.0
+offset_right = 264.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "Press E to enter"

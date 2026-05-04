@@ -26,11 +26,12 @@ tile_map_data = PackedByteArray("AAAmAAIAAAAIACEAAAAmAAMAAAAIACIAAAAnAAIAAAAJACE
 tile_set = ExtResource("1_l13nc")
 
 [node name="Player1" parent="." unique_id=1182933655 instance=ExtResource("2_ue85e")]
-position = Vector2(29, 43)
+position = Vector2(69.48, 53.78)
+scale = Vector2(0.387, 0.387)
 
 [node name="Camera2D" type="Camera2D" parent="Player1" unique_id=172617244]
 offset = Vector2(143.96, 0)
-zoom = Vector2(2.15, 2.15)
+zoom = Vector2(3.275, 3.275)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1904127379]
 
